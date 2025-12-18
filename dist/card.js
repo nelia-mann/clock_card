@@ -644,6 +644,7 @@ var $24833e213e3419f0$export$2e2bcd8739ae039 = (0, $def2de46b9306e8a$export$dbf3
         height: 100%;
         width: 27%;
         font-weight: 600;
+        color: var(--primary-text-color);
     }
 
     .button.clock {

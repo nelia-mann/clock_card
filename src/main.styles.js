@@ -28,6 +28,7 @@ export default css`
         height: 100%;
         width: 27%;
         font-weight: 600;
+        color: var(--primary-text-color);
     }
 
     .button.clock {
