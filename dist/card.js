@@ -1635,7 +1635,7 @@ class $55fbdb017028779e$export$b19b1c9de506be9d extends (0, $ab210b2da7b39b9d$ex
             logged_time: 0.0,
             laps: {}
         };
-        this.changeStopwatch(data);
+        this.sendCommand(data);
         this.press("reset");
     }
     // sends pause information to hass
@@ -1649,11 +1649,12 @@ class $55fbdb017028779e$export$b19b1c9de506be9d extends (0, $ab210b2da7b39b9d$ex
     }
     // sends start information to hass
     doStart() {
+        console.log("ping");
         const data = {
             state: "active",
             start_time: new Date().valueOf()
         };
-        this.sedCommand(data);
+        this.sendCommand(data);
     }
     // selects start/stop information to send, presses button
     doStartStop() {

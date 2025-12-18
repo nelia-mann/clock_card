@@ -213,6 +213,7 @@ export class StopwatchComponent extends LitElement {
 
     // sends start information to hass
     doStart() {
+        console.log("ping");
         const data = {
             state: "active",
             start_time: new Date().valueOf(),
