@@ -197,7 +197,7 @@ export class StopwatchComponent extends LitElement {
             logged_time: 0.0,
             laps: {},
         };
-        this.changeStopwatch(data);
+        this.sendCommand(data);
         this.press("reset");
     }
 
@@ -217,7 +217,7 @@ export class StopwatchComponent extends LitElement {
             state: "active",
             start_time: new Date().valueOf(),
         }
-        this.sedCommand(data);
+        this.sendCommand(data);
     }
 
     // selects start/stop information to send, presses button
