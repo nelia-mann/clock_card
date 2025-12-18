@@ -55,4 +55,14 @@ export default css`
         outline: solid rgb(63, 81, 181);
         outline-offset: -4px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        timer-component {
+            color: #ffffff;
+        }
+
+        .timer-button {
+            color: #ffffff;
+        }
+    }
 `

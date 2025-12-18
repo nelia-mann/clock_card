@@ -49,4 +49,14 @@ export default css`
         outline: solid rgb(110, 65, 171);
         outline-offset: -4px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        .button {
+            color: #ffffff;
+        }
+
+        .clock-display {
+            color: #ffffff;
+        }
+    }
 `

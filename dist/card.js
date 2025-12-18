@@ -740,6 +740,16 @@ var $ea702c2b6f3681ab$export$2e2bcd8739ae039 = (0, $def2de46b9306e8a$export$dbf3
         outline: solid rgb(110, 65, 171);
         outline-offset: -4px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        .button {
+            color: #ffffff;
+        }
+
+        .clock-display {
+            color: #ffffff;
+        }
+    }
 `;
 
 
@@ -901,6 +911,16 @@ var $329704e719fa307b$export$2e2bcd8739ae039 = (0, $def2de46b9306e8a$export$dbf3
         outline: solid rgb(63, 81, 181);
         outline-offset: -4px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        timer-component {
+            color: #ffffff;
+        }
+
+        .timer-button {
+            color: #ffffff;
+        }
+    }
 `;
 
 
@@ -985,6 +1005,16 @@ var $2fd4a6e2363b2c92$export$2e2bcd8739ae039 = (0, $def2de46b9306e8a$export$dbf3
         background-color:  rgba(63, 81, 181, .5);
         outline: solid rgb(63, 81, 181);
         outline-offset: -4px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .control-button {
+            color: #ffffff;
+        }
+
+        .time-button {
+            color: #ffffff;
+        }
     }
 `;
 
@@ -1470,6 +1500,12 @@ var $c4bfff862de7e2ce$export$2e2bcd8739ae039 = (0, $def2de46b9306e8a$export$dbf3
         background-color: rgba(0, 150, 136, .5);
         outline: solid rgb(0, 150, 136);
         outline-offset: -4px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .button {
+            color: #ffffff;
+        }
     }
 `;
 
