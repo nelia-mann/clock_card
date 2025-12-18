@@ -675,6 +675,16 @@ var $24833e213e3419f0$export$2e2bcd8739ae039 = (0, $def2de46b9306e8a$export$dbf3
         outline: solid rgb(0, 150, 136);
         outline-offset: -4px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        ha-card {
+            color: #ffffff;
+        }
+
+        .button {
+            color: #ffffff;
+        }
+    }
 `;
 
 

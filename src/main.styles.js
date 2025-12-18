@@ -59,4 +59,14 @@ export default css`
         outline: solid rgb(0, 150, 136);
         outline-offset: -4px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        ha-card {
+            color: #ffffff;
+        }
+
+        .button {
+            color: #ffffff;
+        }
+    }
 `;
