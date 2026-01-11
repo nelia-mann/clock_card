@@ -1829,7 +1829,21 @@ class $b161f025c07cf354$export$7fe46a8978a1b23d extends (0, $ab210b2da7b39b9d$ex
                 this._clocktype = "timer";
                 break;
             case "stopwatch":
+                this.resetStopwatch();
                 this._clocktype = "stopwatch";
+        }
+    }
+    resetStopwatch() {
+        const state = this._stopwatch;
+        if (!state.attributes.laps) {
+            const data = {
+                entity_id: state.entity_id,
+                state: "idle",
+                start_time: null,
+                logged_time: 0.0,
+                laps: {}
+            };
+            this._hass.callService("python_script", "set_state", data);
         }
     }
     content() {

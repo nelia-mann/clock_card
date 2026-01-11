@@ -90,7 +90,22 @@ export class MainCard extends LitElement {
                 this._clocktype = "timer";
                 break;
             case "stopwatch":
+                this.resetStopwatch();
                 this._clocktype = "stopwatch";
+        }
+    }
+
+    resetStopwatch() {
+        const state = this._stopwatch;
+        if (!state.attributes.laps) {
+            const data = {
+                entity_id: state.entity_id,
+                state: "idle",
+                start_time: null,
+                logged_time: 0.0,
+                laps: {},
+            }
+            this._hass.callService("python_script", "set_state", data);
         }
     }
 
